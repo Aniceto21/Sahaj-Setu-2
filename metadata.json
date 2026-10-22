@@ -1,0 +1,8 @@
+{
+  "name": "Sahaj Setu - Multilingual Accessibility Platform",
+  "description": "An inclusive, multilingual communication and accessibility bridge for Goa, supporting Konkani, Hindi, Marathi, and English with Easy-Read notice simplification, communication boards, and AAC tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

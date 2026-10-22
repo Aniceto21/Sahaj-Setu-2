@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="bridge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with safe zone rounded rectangle -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  
+  <!-- Subtle decorative ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- Bridge arch & communication bubbles symbol -->
+  <g filter="url(#shadow)">
+    <!-- Bridge arch foundation -->
+    <path d="M 110 350 C 170 230, 342 230, 402 350" fill="none" stroke="url(#bridge)" stroke-width="26" stroke-linecap="round"/>
+    
+    <!-- Bridge roadway -->
+    <path d="M 96 364 L 416 364" fill="none" stroke="#fdba74" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Left Speech Bubble (Expression / Be Understood) -->
+    <rect x="130" y="150" width="110" height="85" rx="24" fill="#f8fafc" />
+    <path d="M 165 235 L 180 255 L 195 235 Z" fill="#f8fafc" />
+    <!-- Sound waves / lines inside left bubble -->
+    <path d="M 155 180 Q 165 192 155 205" fill="none" stroke="#0f766e" stroke-width="5" stroke-linecap="round" />
+    <path d="M 172 173 Q 187 192 172 212" fill="none" stroke="#0f766e" stroke-width="5" stroke-linecap="round" />
+    <circle cx="210" cy="192" r="6" fill="#f59e0b" />
+
+    <!-- Right Speech Bubble (Understanding / Hear & Notice) -->
+    <rect x="270" y="130" width="120" height="92" rx="24" fill="#38bdf8" />
+    <path d="M 330 222 L 342 245 L 358 222 Z" fill="#38bdf8" />
+    <!-- Symbol inside right bubble: bridge link & text lines -->
+    <line x1="295" y1="162" x2="365" y2="162" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <line x1="295" y1="178" x2="355" y2="178" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <line x1="295" y1="194" x2="335" y2="194" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Central heart/bridge connector emblem -->
+    <circle cx="256" cy="275" r="28" fill="#f59e0b" stroke="#ffffff" stroke-width="5"/>
+    <path d="M 248 275 L 253 280 L 265 268" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

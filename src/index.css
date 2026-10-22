@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* High Contrast Theme */
+html.high-contrast {
+  filter: contrast(125%);
+  --tw-border-opacity: 1;
+}
+
+html.high-contrast button,
+html.high-contrast input,
+html.high-contrast select,
+html.high-contrast textarea {
+  border-width: 2px !important;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html.reduced-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* User Text Size Preferences */
+html.text-size-large {
+  font-size: 112.5%; /* 18px */
+}
+
+html.text-size-xl {
+  font-size: 125%; /* 20px */
+}
+
+/* Ensure focus states are clearly visible for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid #0d9488 !important;
+  outline-offset: 2px !important;
+}
